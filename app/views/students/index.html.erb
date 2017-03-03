@@ -1,5 +1,9 @@
 <h1>Listing students</h1>
 
+<%= form_tag(students_path, id: 'students_form', method: 'get') do |f|%>
+  <%= select_tag "movie", options_for_select(@movies, params[:movie]), include_blank: 'All', prompt: "Filter by movie", id: "search_by_movie"%>
+<% end %>
+
 <table>
   <tr>
     <th>Name</th>

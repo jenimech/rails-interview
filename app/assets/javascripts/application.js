@@ -14,3 +14,12 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+$(document).ready(function(){
+
+  $("#search_by_movie").change(function(){
+    $('#students_form').submit();
+  }); 
+
+})
