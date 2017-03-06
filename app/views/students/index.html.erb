@@ -21,10 +21,3 @@
 
 </div>
 
-<script type="text/javascript">
-  $(function() {
-    // Interview is the app name
-    window.router = new Interview.Routers.StudentsRouter({students: <%= @students.to_json(methods: [:name, :movie]).html_safe -%>});
-    Backbone.history.start();
-  });
-</script>
